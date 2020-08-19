@@ -638,7 +638,21 @@
         });
     }
 
+function preloadFunc()
+    {
+		preloader();
 
+            sliderBgSetting();
+
+            toggleMobileNavigation();
+
+            smallNavFunctionality();
+
+            smoothScrolling($("#navbar > ul > li > a[href^='#']"), $(".site-header .navigation").innerHeight());
+
+            smoothScrolling($(".go-rsvp-area"), $(".site-header .navigation").innerHeight());
+    }
+    window.onpaint = preloadFunc();
 
     /*==========================================================================
         WHEN DOCUMENT LOADING
